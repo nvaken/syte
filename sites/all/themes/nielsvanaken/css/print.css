@@ -1,0 +1,109 @@
+/** Basic fonts **/
+body,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+.accent,
+.beta,
+.menu a,
+.nav a,
+a,
+p a:link,
+p a:visited,
+p a:hover,
+p a:focus {
+  background: #fff !important;
+  color: #000 !important;
+}
+p,
+ul,
+ol,
+li {
+  page-break-inside: avoid;
+}
+img {
+  max-width: 100% !important;
+}
+a {
+  text-decoration: none;
+  word-wrap: break-word;
+}
+a:after {
+  content: " (" attr(href) ")";
+  font-size: 80%;
+  text-decoration: underline;
+}
+.button,
+.button-primary {
+  padding: 0.5em;
+  font-size: 100%;
+  border: 1px solid #000;
+}
+.row {
+  display: block;
+  clear: both;
+  float: none;
+}
+/** Print header & logo **/
+.logo,
+.logo-link {
+  display: block;
+  float: none;
+  position: static;
+}
+/** Hide elements **/
+.header,
+.highlighted,
+.footer,
+.drupal-tabs,
+.element-invisible {
+  display: none;
+}
+/** Aside content **/
+.aside-first {
+  page-break-before: always;
+}
+.aside-first:before {
+  content: '';
+  display: block;
+  border-top: 2px solid silver;
+}
+.aside-first h2 {
+  font-size: 26px;
+}
+.aside-first .hover-enlarge {
+  width: 3cm;
+  height: 3cm;
+}
+.aside-second {
+  page-break-before: always;
+}
+/** Special mixins **/
+.media,
+.bd {
+  display: block;
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+  page-break-inside: avoid;
+}
+.media .im {
+  float: left;
+  margin-left: 0;
+  margin-right: 1em;
+}
+.media .im img {
+  display: block;
+}
+.media .im-alt {
+  float: right;
+  margin-left: 1em;
+  margin-right: 0;
+}
+.island {
+  display: block;
+}
+/** Site specific **/

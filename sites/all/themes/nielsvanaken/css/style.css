@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.element-invisible {
+  display: none;
+}
+.logo-link {
+  overflow: hidden;
+}
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.links a {
+  display: block;
+}
+.main-menu a {
+  padding: 0.5em 0;
+  color: #666666;
+  text-decoration: none;
+}
+.form-item,
+.webform-component {
+  margin-bottom: 18px;
+}
+.form-radios .form-item,
+.form-checkboxes .form-item {
+  margin-bottom: 0;
+}
+.form-item label,
+.webform-component label {
+  display: block;
+}
+.form-radios label,
+.form-checkboxes label {
+  display: inline;
+  display: inline-block;
+  line-height: 18px;
+  min-height: 18px;
+}
+.form-item input,
+.form-item select,
+.form-item textarea,
+.webform-component input,
+.webform-component select,
+.webform-component textarea {
+  padding: 1% 2%;
+  width: 96%;
+  border: 1px solid #999b9e;
+}
+.form-radios input,
+.form-checkboxes input {
+  width: auto;
+  border-width: 0px;
+  margin-right: 10px;
+}
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus,
+.webform-component input:focus,
+.webform-component select:focus,
+.webform-component textarea:focus {
+  outline: 1px solid #ee0000;
+  -o-box-shadow: 0px 0px 5px #ee0000;
+  -moz-box-shadow: 0px 0px 5px #ee0000;
+  -webkit-box-shadow: 0px 0px 5px #ee0000;
+  -ms-box-shadow: 0px 0px 5px #ee0000;
+  box-shadow: 0px 0px 5px #ee0000;
+}
+.form-actions .form-submit {
+  padding: 1% 2%;
+  width: auto;
+  text-indent: 0;
+  border: 0;
+  color: #ffffff;
+  background: #ee0000;
+}
+/* media object */
+.media,
+.bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+.media .im {
+  float: left;
+  margin-right: 10px;
+}
+.media .im-alt {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.media .im img {
+  display: block;
+}

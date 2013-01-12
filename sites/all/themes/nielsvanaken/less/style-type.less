@@ -1,0 +1,66 @@
+@import "vars.less";
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('fonts/helveticaneueltstd-lt-webfont.eot');
+    src: url('fonts/helveticaneueltstd-lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneueltstd-lt-webfont.woff') format('woff'),
+         url('fonts/helveticaneueltstd-lt-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneueltstd-lt-webfont.svg#HelveticaNeueLTStd45Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, input, select, textarea {
+	color: @color-text;
+	font-size: @font-normal;
+	line-height: @lineheight;
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+	font-weight: 300;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.2;
+	text-rendering: optimizeLegibility;
+	color: @color-accent;
+}
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
+h1, .h1 {
+	font-size: @font-huge;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h2, .h2 {
+	font-size: @font-large;
+	margin-top: @lineheight;
+	margin-bottom: @lineheight;
+}
+h3, .h3 {
+	font-size: @font-normal;
+	margin-top: @lineheight;
+	margin-bottom: @lineheight;
+}
+.beta, .nav-beta a {
+	color: @color-text;
+}
+p, ul, ol {
+	margin-top: 0;
+	margin-bottom: @lineheight;
+}
+hr {
+	height: 1px;
+	border: 0;
+	padding: 0;
+	color: @color-lines;
+	background: @color-lines;
+}
+a, .tel {
+	color: @color-accent;
+}
+a:hover, a:focus {
+	color: @color-hover;
+}

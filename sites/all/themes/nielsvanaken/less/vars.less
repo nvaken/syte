@@ -1,0 +1,55 @@
+@sitewidth:		982px;
+@gutter:		10px;
+@cols:			32;
+
+@color-text:	#666666;
+@color-accent:	#ee0000;
+@color-hover:	darken(@color-accent, 10%);
+@color-bg:		#ededed;
+@color-light:	#ffffff;
+@color-dark:	#000000;
+@color-lines:	#999b9e;
+
+@lineheight:	18px;
+
+@font-huge:		3 * @lineheight;
+@font-xlarge:	2 * @lineheight;
+@font-large:	@lineheight;
+@font-normal:	13px;
+
+
+@one-col:		(@sitewidth - (@gutter * (@cols - 1))) / @cols;
+
+
+.debug () {
+	background: rgba(0,0,0,0.05);
+}
+
+.box-size () {
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+.shadow (@shadow-color:rgba(5,5,5,0.17), @shadow-size:5px) {
+         -o-box-shadow: 0px 0px @shadow-size @shadow-color;
+       -moz-box-shadow: 0px 0px @shadow-size @shadow-color;
+    -webkit-box-shadow: 0px 0px @shadow-size @shadow-color;
+        -ms-box-shadow: 0px 0px @shadow-size @shadow-color;
+            box-shadow: 0px 0px @shadow-size @shadow-color;
+}
+
+.rotate (@deg:45deg){
+	-webkit-transform: rotate(@deg);
+	   -moz-transform: rotate(@deg);
+			transform: rotate(@deg);
+}
+
+.arrow (@color:@color-accent, @size:@lineheight) {
+	display: block;
+	position: relative;
+	width: @size;
+	height: @size;
+	background-color: @color;
+	.rotate();
+}

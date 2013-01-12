@@ -1,0 +1,100 @@
+@import "vars.less";
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+img { 
+	max-width: 100%; 
+}
+.element-invisible {
+	display: none;
+}
+.logo-link {
+	overflow: hidden;
+}
+.links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.links a {
+	display: block;
+}
+.main-menu {}
+.main-menu a {
+	padding: 0.5em 0;
+	color: @color-text;
+	text-decoration: none;
+}
+.form-item,
+.webform-component {
+	margin-bottom: @lineheight;
+}
+.form-radios .form-item,
+.form-checkboxes .form-item {
+	margin-bottom: 0;
+}
+.form-item label,
+.webform-component label {
+	display: block;
+}
+.form-radios label,
+.form-checkboxes label {
+	display: inline;
+	display: inline-block;
+	line-height: @lineheight;
+	min-height: @lineheight;
+}
+.form-item input,
+.form-item select,
+.form-item textarea,
+.webform-component input,
+.webform-component select,
+.webform-component textarea {
+	padding: 1% 2%;
+	width: 96%;
+	border: 1px solid @color-lines;
+}
+.form-radios input,
+.form-checkboxes input {
+	width: auto;
+	border-width: 0px;
+	margin-right: @gutter;
+}
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus,
+.webform-component input:focus,
+.webform-component select:focus,
+.webform-component textarea:focus {
+	outline: 1px solid @color-accent;
+	.shadow(@color-accent);
+}
+.form-actions .form-submit {
+	padding: 1% 2%;
+	width: auto;
+	text-indent: 0;
+	border: 0;
+	color: @color-light;
+	background: @color-accent;
+}
+
+/* media object */
+.media, .bd {
+	overflow: hidden; 
+	_overflow: visible; 
+	zoom:1;
+}
+.media .im {
+	float: left; 
+	margin-right: 10px;
+}
+.media .im-alt {
+	float: right; 
+	margin-left: 10px;
+	margin-right: 0px;
+}
+.media .im img {
+	display: block;
+}

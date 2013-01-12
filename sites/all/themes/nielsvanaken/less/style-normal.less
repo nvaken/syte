@@ -1,0 +1,40 @@
+@import "vars.less";
+@import "grid.less";
+
+.page-wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+.prev-btn, .next-btn {
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 10px;
+	right: 47px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: #000 url('../images/prevnext.png') no-repeat 0 0;
+}
+.next-btn {
+	right: 10px;
+	background-position: -37px 0;
+}
+.nav-row li {
+	float: left;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 34px;
+}
+.nav-row a {
+	padding: 0;
+	height: 48px;
+	line-height: 48px;
+}
+.nav-row .first {
+	background: none;
+}
+.m-link {
+	text-decoration: none;
+	color: @color-text;
+}

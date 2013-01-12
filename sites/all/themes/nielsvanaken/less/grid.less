@@ -1,0 +1,96 @@
+.w {
+	width: @sitewidth;
+	margin-left: auto;
+	margin-right: auto;
+}
+.r{
+	clear: both;
+	margin-left: -1 * @gutter;
+	margin-bottom: @lineheight;
+	.mixin-grid-bg(@gutter, @sitewidth, @cols);
+}
+.r:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.matrix .g {
+	margin-bottom: @lineheight;
+}
+.g{
+	float: left;
+	margin-left: @gutter;
+	min-height: @lineheight;
+	.debug;
+}
+.g img {
+	display: block;
+}
+
+.g1 { .mixin-grid(1, @gutter, @sitewidth, @cols); }
+.g2 { .mixin-grid(2, @gutter, @sitewidth, @cols); }
+.g3 { .mixin-grid(3, @gutter, @sitewidth, @cols); }
+.g4 { .mixin-grid(4, @gutter, @sitewidth, @cols); }
+.g5 { .mixin-grid(5, @gutter, @sitewidth, @cols); }
+.g6 { .mixin-grid(6, @gutter, @sitewidth, @cols); }
+.g7 { .mixin-grid(7, @gutter, @sitewidth, @cols); }
+.g8 { .mixin-grid(8, @gutter, @sitewidth, @cols); }
+.g9 { .mixin-grid(9, @gutter, @sitewidth, @cols); }
+.g10{ .mixin-grid(10,@gutter, @sitewidth, @cols); }
+.g11{ .mixin-grid(11,@gutter, @sitewidth, @cols); }
+.g12{ .mixin-grid(12,@gutter, @sitewidth, @cols); }
+.g13{ .mixin-grid(13,@gutter, @sitewidth, @cols); }
+.g14{ .mixin-grid(14,@gutter, @sitewidth, @cols); }
+.g15{ .mixin-grid(15,@gutter, @sitewidth, @cols); }
+.g16{ .mixin-grid(16,@gutter, @sitewidth, @cols); }
+.g17{ .mixin-grid(17,@gutter, @sitewidth, @cols); }
+.g18{ .mixin-grid(18,@gutter, @sitewidth, @cols); }
+.g19{ .mixin-grid(19,@gutter, @sitewidth, @cols); }
+.g20{ .mixin-grid(20,@gutter, @sitewidth, @cols); }
+.g21{ .mixin-grid(21,@gutter, @sitewidth, @cols); }
+.g22{ .mixin-grid(22,@gutter, @sitewidth, @cols); }
+.g23{ .mixin-grid(23,@gutter, @sitewidth, @cols); }
+.g24{ .mixin-grid(24,@gutter, @sitewidth, @cols); }
+.g25{ .mixin-grid(25,@gutter, @sitewidth, @cols); }
+.g26{ .mixin-grid(26,@gutter, @sitewidth, @cols); }
+.g27{ .mixin-grid(27,@gutter, @sitewidth, @cols); }
+.g28{ .mixin-grid(28,@gutter, @sitewidth, @cols); }
+.g29{ .mixin-grid(29,@gutter, @sitewidth, @cols); }
+.g30{ .mixin-grid(30,@gutter, @sitewidth, @cols); }
+.g31{ .mixin-grid(31,@gutter, @sitewidth, @cols); }
+.g32{ .mixin-grid(32,@gutter, @sitewidth, @cols); }
+
+.p1 { .mixin-pad(1, @gutter, @sitewidth, @cols); }
+.p2 { .mixin-pad(2, @gutter, @sitewidth, @cols); }
+.p3 { .mixin-pad(3, @gutter, @sitewidth, @cols); }
+.p4 { .mixin-pad(4, @gutter, @sitewidth, @cols); }
+.p5 { .mixin-pad(5, @gutter, @sitewidth, @cols); }
+.p6 { .mixin-pad(6, @gutter, @sitewidth, @cols); }
+.p7 { .mixin-pad(7, @gutter, @sitewidth, @cols); }
+.p8 { .mixin-pad(8, @gutter, @sitewidth, @cols); }
+.p9 { .mixin-pad(9, @gutter, @sitewidth, @cols); }
+.p10{ .mixin-pad(10,@gutter, @sitewidth, @cols); }
+.p11{ .mixin-pad(11,@gutter, @sitewidth, @cols); }
+.p12{ .mixin-pad(12,@gutter, @sitewidth, @cols); }
+
+.mixin-grid(@num, @gutter:10px, @sitewidth:982px, @cols:32) {
+    @one_col: (@sitewidth - (@gutter * (@cols - 1))) / @cols;
+    width: (@one_col * @num) + (@gutter * (@num - 1));
+}
+.mixin-pad(@num, @gutter:10px, @sitewidth:982px, @cols:32) {
+	@one_col: (@sitewidth - (@gutter * (@cols - 1))) / @cols;
+    margin-left: (@one_col * @num) + (@gutter * (@num)) + @gutter;
+}
+.mixin-grid-bg (@gutter:10px, @sitewidth:982px, @cols:32) {
+	@one_col: (@sitewidth - (@gutter * (@cols - 1))) / @cols;
+	background-image:		 -o-linear-gradient(	0deg,	rgba(0,0,0,.025) 0px,	rgba(0,0,0,.05) @gutter,	rgba(0,0,0,0.1) @gutter);
+	background-image:	   -moz-linear-gradient(	0deg,	rgba(0,0,0,.025) 0px,	rgba(0,0,0,.05) @gutter,	rgba(0,0,0,0.1) @gutter);
+	background-image:   -webkit-linear-gradient(	0deg,	rgba(0,0,0,.025) 0px,	rgba(0,0,0,.05) @gutter,	rgba(0,0,0,0.1) @gutter);
+	background-image:		-ms-linear-gradient(	0deg,	rgba(0,0,0,.025) 0px,	rgba(0,0,0,.05) @gutter,	rgba(0,0,0,0.1) @gutter);
+	background-image:			linear-gradient(	0deg,	rgba(0,0,0,.025) 0px,	rgba(0,0,0,.05) @gutter,	rgba(0,0,0,0.1) @gutter);
+		 -o-background-size: @gutter+@one_col	@gutter+@one_col;
+	   -moz-background-size: @gutter+@one_col	@gutter+@one_col;
+	-webkit-background-size: @gutter+@one_col	@gutter+@one_col;
+		-ms-background-size: @gutter+@one_col	@gutter+@one_col;
+			background-size: @gutter+@one_col	@gutter+@one_col;
+}

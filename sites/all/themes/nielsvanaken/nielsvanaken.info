@@ -1,0 +1,22 @@
+name = Nielsvanaken.nl - V1.0
+description = Nielsvanaken.nl main theme
+base theme = stark
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/style-type.css
+stylesheets[screen][] = css/style.css
+stylesheets[screen and (min-width:740px)][] = css/style-normal.css
+stylesheets[print][] = css/print.css
+
+scripts[] = js/scripts.js
+scripts[] = js/jquery.timeago.js
+
+regions[aside_first] = Aside first
+regions[content] = Content
+regions[header] = Header
+regions[navigation] = Navigation
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[help] = Help
